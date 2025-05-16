@@ -4,7 +4,7 @@ import requests
 # Page configuration
 st.set_page_config(page_title="PakSeek AI", layout="centered")
 
-st.title("💬 PakSeek AI")
+st.title("🤖 PakSeek AI")
 
 # User input section
 with st.sidebar:
