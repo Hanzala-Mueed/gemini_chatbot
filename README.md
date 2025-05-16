@@ -6,7 +6,7 @@ Introduction:
 - The backend is built with FastAPI, enabling fast and scalable API communication.
 - This project demonstrates full-stack AI integration with persistent chat history and user management.
 
-
+```
 gemini_chatbot/
 │
 ├── app/                          # FastAPI backend
@@ -35,4 +35,6 @@ gemini_chatbot/
 ├── .env                          # ENV vars (DB URL, Gemini key)
 ├── requirements.txt              # Python dependencies
 ├── README.md
-└── run.sh                        # Optional: bash script to run all
+└── run.sh                        # bash script to run all
+
+```

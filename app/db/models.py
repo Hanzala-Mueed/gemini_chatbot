@@ -11,7 +11,7 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, nullable=False, unique=True)
 
-    # Add this line to fix the error
+    
     chats = relationship("ChatHistory", back_populates="user", cascade="all, delete-orphan")
 
 
@@ -23,6 +23,6 @@ class ChatHistory(Base):
     prompt = Column(Text)
     response = Column(Text)
 
-    # This line already exists in your code
+    
     user = relationship("User", back_populates="chats")
 

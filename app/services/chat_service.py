@@ -1,5 +1,3 @@
-
-
 from app.db.models import User , ChatHistory
 from app.db.schemas import ChatRequest
 from app.utils.gemini_client import generate_response
@@ -29,7 +27,7 @@ def process_chat(db, chat_data: ChatRequest):
     db.commit()
     db.refresh(chat)
 
-    # ✅ Updated key to "answer"
+    
     return {"answer": response}
 
 

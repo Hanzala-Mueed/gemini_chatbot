@@ -9,7 +9,7 @@ st.title("🤖 PakSeek AI")
 # User input section
 with st.sidebar:
     st.header("User Settings")
-    username = st.text_input("👤 Enter your username:", value="hanzala")
+    username = st.text_input("👤 Enter your username:", value=" ")
     if st.button("🧹 Clear Chat"):
         st.session_state.chat_history = []
 
